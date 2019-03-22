@@ -1,0 +1,26 @@
+1.容器组件
+容器组件（Container）包含一个子Widget，自身具备如alignment、padding等基础属性，方便布局过程中摆放child。
+属性：key、alignment、padding、color、decoration、foregroundDecoration、width、height、constraints、margin、transform、child。
+
+2.图片组件
+图片组件（Image）是显示图像的组件，Image组件有多种构造函数：
+    new Image: 从ImageProvider获取图像；
+    new Image.asset: 加载资源图片；
+    new Image.file: 加载本地图片文件；
+    new Image.network: 加载网络图片；
+    new Image.memory: 加载Unit8List资源图片。
+常见属性：image、width/height、fit、color、colorBlendMode、alignment、repeat、centerSlice、matchTextDirection、gaplessPlayback。
+
+3.文本组件
+文本组件（text）负责显示文本和定义显示样式。
+属性：data、maxLines、style、textAlign、textDirection、textScaleFactor、textSpan。
+
+4.图标及按钮组件
+4.1图标组件
+图标组件（Icon）为展示图标的组件，该组件不可交互，要实现交互的图标，可以考虑使用IconButton组件。
+图标组件相关的组件有以下几个：
+    IconButton：可交互的Icon；
+    Icons：框架自带Icon集合；
+    IconTheme：Icon主题；
+    ImageIcon：通过AssetImages或者其他图片显示Icon。
+常见属性：color、icon、style、size、textDirection。
